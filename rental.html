@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900;800&family=Nunito+Sans:ital,wght@0,200;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@1;100&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200&family=Ysabeau:wght@1;100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200&family=Ysabeau:wght@1;100&display=swap" rel="stylesheet">
+<script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="codewithshobhit/296" data-width="100%"></script>
+<link class="tab-logo" rel="icon" href="img/p1.png" type="image/icon type">
+
+</head>
+<body>
+
+
+
+<div class="navbar">
+    <img class="logo" src="img/p2.png" alt="">
+
+    <div class="menu-bar">
+        <i class="fa-solid fa-bars"></i>        
+    </div>
+
+
+    <div class="nav-tab">
+        <div class="nav-item item-active">
+            <h1 class="scroll-link" data-target=".below-nav" onclick="navigateToPage('index.html', '.below-nav')" >Home</h1>
+        </div>
+        <div class="nav-item ">
+            <h1 class="scroll-link" data-target=".rental-about" onclick="navigateToPage('index.html', '.rental-about')">Ride</h1>
+        </div>
+        <div class="nav-item">
+            <h1 class="scroll-link" data-target=".services-window" onclick="navigateToPage('index.html', '.services-window')">Services</h1>
+        </div>
+        <div class="nav-item">
+            <h1 class="scroll-link" data-target=".about" onclick="navigateToPage('index.html', '.about')">About</h1>
+        </div>
+        <div class="nav-item">
+            <h1 class="scroll-link" data-target=".reviews" onclick="navigateToPage('index.html', '.reviews')">Reviews</h1>
+        </div>
+    </div>
+
+    <div class="nav-btn">
+        <button class="sign-up" id="signup-btn">Sign Up</button>
+        <button class="sign-in" id="signin-btn">Sign In</button>
+    </div>
+</div>
+
+<div class="overlay">
+    <div class="login-form">
+        <h1>Login</h1>
+        <div class="username-wnd">
+            <p>Username</p>
+            <div class="username-tab">
+                <i class="fa-regular fa-user"></i>
+                <input class="login-input" type="text" placeholder="Username" >
+            </div>
+        </div>
+        <div class="username-wnd">
+            <p>Password</p>
+            <div class="username-tab">
+                <i class="fa-solid fa-lock"></i>
+                <input class="login-input" type="password" placeholder="Password" >
+            </div>
+        </div>
+        <div class="forgot-pass">
+            <h6>Forgot password?</h6>
+        </div>
+
+        <button class="login-btn">Login</button>
+        <span>Or sign up using...</span>
+        <div class="app-wnd">
+            <div class="app-icon app1">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+          
+            <div class="app-icon app2">
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+
+            <div class="app-icon app3">
+            <i class="fa-brands fa-twitter"></i>
+            </div>
+            
+        </div>
+    </div>
+   
+</div>
+
+<!-- ////? -->
+
+<div class="map-overlay">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5991.176036017857!2d19.798929746632087!3d41.33957113522373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135031a1c8d83825%3A0x74a327f9c3644aa8!2sDon%20Bosco%2C%20Tirana%2C%20Albania!5e0!3m2!1sen!2s!4v1684358899948!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="rent-window">
+    <div class="filter-window">
+        <div class="map-wnd">
+            <i class="fa-solid fa-location-dot"></i>
+            <button>Show on map</button>
+        </div>
+        <div class="filter-wnd">
+            <div class="filter-head">
+                <h1>Filter</h1>
+                <a href="">Clear all filters</a>
+            </div>
+            <div class="option-wnd">
+                <h1>Location (Tirana International Airport Mother Teresa)</h1>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>Airport (in terminal)</p>
+                </div>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>Airport (meet & greet)</p>
+                </div>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>Airport (car rental centre)</p>
+                </div>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>Airport (outside terminal)</p>
+                </div>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>All other locations</p>
+                </div>
+            </div>
+            <div class="option-wnd">
+                <h1>Price per day</h1>
+                <div class="select-window not-allowed">
+                    <input type="checkbox" >
+                    <p>US$0 - US$50</p>
+                </div>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>US$50 - US$100</p>
+                </div>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>US$100 - US$150</p>
+                </div>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>US$150 - US$200</p>
+                </div>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>US$200 +</p>
+                </div>
+            </div>
+            <div class="option-wnd">
+                <h1>Car specs</h1>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>
+                        Air Conditioning</p>
+                </div>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>4+ doors</p>
+                </div>
+                
+            </div>
+            <div class="option-wnd">
+                <h1>Mileage/Kilometres</h1>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>Unlimited</p>
+                </div>
+               
+                
+            </div>
+
+            <div class="option-wnd">
+                <h1>Transmission</h1>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>Automatic</p>
+                </div>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>Manual</p>
+                </div>
+               
+                
+            </div>
+            <div class="option-wnd">
+                <h1>Car category</h1>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>Small</p>
+                </div>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>Medium</p>
+                </div>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>Large</p>
+                </div>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>Estate</p>
+                </div>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>Premium</p>
+                </div>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>People carriers</p>
+                </div>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>SUVs</p>
+                </div>
+            </div>
+            <div class="option-wnd">
+                <h1>Car category</h1>
+                <div class="select-window">
+                    <input type="checkbox" >
+                    <p>Like for like</p>
+                </div>
+                
+            </div>
+
+
+        </div>
+    </div>
+    <div class="rent-wnd">
+        <h2>Tirana International Airport Mother Teresa: <strong>147 cars available <strong> <h2>
+            <div class="car-type">
+                <div class="type-wnd">
+                    <img src="img/t1.jpg" alt="">
+                    <h1>Small</h1>
+                </div>
+                <div class="type-wnd">
+                    <img src="img/t2.jpg" alt="">
+                    <h1>Medium</h1>
+                </div>
+                <div class="type-wnd">
+                    <img src="img/t3.jpg" alt="">
+                    <h1>Large</h1>
+                </div>
+                <div class="type-wnd">
+                    <img src="img/t4.jpg" alt="">
+                    <h1>Estate</h1>
+                </div>
+                <div class="type-wnd">
+                    <img src="img/t5.jpg" alt="">
+                    <h1>Premium</h1>
+                </div>
+                <div class="type-wnd">
+                    <img src="img/t6.jpg" alt="">
+                    <h1>Carriers</h1>
+                </div>
+                <div class="type-wnd">
+                    <img src="img/t7.jpg" alt="">
+                    <h1>SUVs</h1>
+                </div>
+            </div>
+
+            <div class="sort-window">
+                <h3>Sort by</h3>
+                <div class="sort-buttons">
+                    <button class="recommended-button">Recommended</button>
+                    <button class="price-button">Price (lowest first)</button>
+                </div>
+            </div>
+
+
+            <div class="whole-cars">
+
+            <div class="car-content">
+                <div class="car-purchase">
+                    <img src="img/car1.jpg" alt="">
+                    <div class="purchase-content">
+                        <button>Ideal for families</button>
+                        <h1>Ford Focus <p>or similar small car</p></h1>
+                        <div class="purchase-options">
+                            <div class="car-options">
+                                <i class="fa-regular fa-user"></i>
+                                <h1> 5 seats</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-gears"></i>
+                                <h1> Manual</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <h1>1 Large bag</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <h1>1 small bag</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-brands fa-opencart"></i>
+                                <h1> Unlimited </h1>
+                            </div>
+
+                        </div>
+                        <a href="">Tirana Airport</a>
+                        <span>Car Rental Centre</span>
+                    </div>
+                    <div class="price-purchase">
+                        <p>Price for 3 days</p>
+                        <h4>US$899.33</h4>
+                        <span><i class="fa-solid fa-check"></i> Free cancellation</span>
+                        <button class="view-deal">View Deal</button>
+                    </div>
+                </div>
+                <div class="car-information">
+                    <img src="img/l1.png" alt="">
+                    <button class="car-grade">8.3</button>
+                    <span><b> Good </b> <br> 1000+ Reviews</span>
+                    <a href=""><i class="fa-regular fa-circle-question"></i>  Important info</a>
+                    <a href=""><i class="fa-regular fa-envelope"></i>  Email Quote</a>
+                </div>
+
+                <div class="car-rate car-hidden">
+                    <div class="rate-window">
+                        <h1>Costumer Ratings</h1>
+                        <div class="car-wnds">
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>3</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>2</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>10</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /// -->
+
+            <div class="car-content">
+                <div class="car-purchase">
+                    <img src="img/car1.jpg" alt="">
+                    <div class="purchase-content">
+                        <button>Ideal for families</button>
+                        <h1>Ford Focus <p>or similar small car</p></h1>
+                        <div class="purchase-options">
+                            <div class="car-options">
+                                <i class="fa-regular fa-user"></i>
+                                <h1> 5 seats</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-gears"></i>
+                                <h1> Manual</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <h1>1 Large bag</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <h1>1 small bag</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-brands fa-opencart"></i>
+                                <h1> Unlimited </h1>
+                            </div>
+
+                        </div>
+                        <a href="">Tirana Airport</a>
+                        <span>Car Rental Centre</span>
+                    </div>
+                    <div class="price-purchase">
+                        <p>Price for 3 days</p>
+                        <h4>US$160.33</h4>
+                        <span><i class="fa-solid fa-check"></i> Free cancellation</span>
+                        <button class="view-deal">View Deal</button>
+                    </div>
+                </div>
+                <div class="car-information">
+                    <img src="img/l1.png" alt="">
+                    <button class="car-grade">8.3</button>
+                    <span><b> Good </b> <br> 1000+ Reviews</span>
+                    <a href=""><i class="fa-regular fa-circle-question"></i>  Important info</a>
+                    <a href=""><i class="fa-regular fa-envelope"></i>  Email Quote</a>
+                </div>
+
+                <div class="car-rate car-hidden">
+                    <div class="rate-window">
+                        <h1>Costumer Ratings</h1>
+                        <div class="car-wnds">
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>1</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>2</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /// -->
+
+            <div class="car-content">
+                <div class="car-purchase">
+                    <img src="img/car1.jpg" alt="">
+                    <div class="purchase-content">
+                        <button>Ideal for families</button>
+                        <h1>Ford Focus <p>or similar small car</p></h1>
+                        <div class="purchase-options">
+                            <div class="car-options">
+                                <i class="fa-regular fa-user"></i>
+                                <h1> 5 seats</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-gears"></i>
+                                <h1> Manual</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <h1>1 Large bag</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <h1>1 small bag</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-brands fa-opencart"></i>
+                                <h1> Unlimited </h1>
+                            </div>
+
+                        </div>
+                        <a href="">Tirana Airport</a>
+                        <span>Car Rental Centre</span>
+                    </div>
+                    <div class="price-purchase">
+                        <p>Price for 3 days</p>
+                        <h4>US$129.33</h4>
+                        <span><i class="fa-solid fa-check"></i> Free cancellation</span>
+                        <button class="view-deal">View Deal</button>
+                    </div>
+                </div>
+                <div class="car-information">
+                    <img src="img/l1.png" alt="">
+                    <button class="car-grade">8.3</button>
+                    <span><b> Good </b> <br> 1000+ Reviews</span>
+                    <a href=""><i class="fa-regular fa-circle-question"></i>  Important info</a>
+                    <a href=""><i class="fa-regular fa-envelope"></i>  Email Quote</a>
+                </div>
+
+                <div class="car-rate car-hidden">
+                    <div class="rate-window">
+                        <h1>Costumer Ratings</h1>
+                        <div class="car-wnds">
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ////? -->
+            <div class="car-content">
+                <div class="car-purchase">
+                    <img src="img/car1.jpg" alt="">
+                    <div class="purchase-content">
+                        <button>Ideal for families</button>
+                        <h1>Ford Focus <p>or similar small car</p></h1>
+                        <div class="purchase-options">
+                            <div class="car-options">
+                                <i class="fa-regular fa-user"></i>
+                                <h1> 5 seats</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-gears"></i>
+                                <h1> Manual</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <h1>1 Large bag</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <h1>1 small bag</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-brands fa-opencart"></i>
+                                <h1> Unlimited </h1>
+                            </div>
+
+                        </div>
+                        <a href="">Tirana Airport</a>
+                        <span>Car Rental Centre</span>
+                    </div>
+                    <div class="price-purchase">
+                        <p>Price for 3 days</p>
+                        <h4>US$139.33</h4>
+                        <span><i class="fa-solid fa-check"></i> Free cancellation</span>
+                        <button class="view-deal">View Deal</button>
+                    </div>
+                </div>
+                <div class="car-information">
+                    <img src="img/l1.png" alt="">
+                    <button class="car-grade">8.3</button>
+                    <span><b> Good </b> <br> 1000+ Reviews</span>
+                    <a href=""><i class="fa-regular fa-circle-question"></i>  Important info</a>
+                    <a href=""><i class="fa-regular fa-envelope"></i>  Email Quote</a>
+                </div>
+
+                <div class="car-rate car-hidden">
+                    <div class="rate-window">
+                        <h1>Costumer Ratings</h1>
+                        <div class="car-wnds">
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /// -->
+            <div class="car-content">
+                <div class="car-purchase">
+                    <img src="img/car1.jpg" alt="">
+                    <div class="purchase-content">
+                        <button>Ideal for families</button>
+                        <h1>Ford Focus <p>or similar small car</p></h1>
+                        <div class="purchase-options">
+                            <div class="car-options">
+                                <i class="fa-regular fa-user"></i>
+                                <h1> 5 seats</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-gears"></i>
+                                <h1> Manual</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <h1>1 Large bag</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <h1>1 small bag</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-brands fa-opencart"></i>
+                                <h1> Unlimited </h1>
+                            </div>
+
+                        </div>
+                        <a href="">Tirana Airport</a>
+                        <span>Car Rental Centre</span>
+                    </div>
+                    <div class="price-purchase">
+                        <p>Price for 3 days</p>
+                        <h4>US$159.33</h4>
+                        <span><i class="fa-solid fa-check"></i> Free cancellation</span>
+                        <button class="view-deal">View Deal</button>
+                    </div>
+                </div>
+                <div class="car-information">
+                    <img src="img/l1.png" alt="">
+                    <button class="car-grade">8.3</button>
+                    <span><b> Good </b> <br> 1000+ Reviews</span>
+                    <a href=""><i class="fa-regular fa-circle-question"></i>  Important info</a>
+                    <a href=""><i class="fa-regular fa-envelope"></i>  Email Quote</a>
+                </div>
+
+                <div class="car-rate car-hidden">
+                    <div class="rate-window">
+                        <h1>Costumer Ratings</h1>
+                        <div class="car-wnds">
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /// -->
+            <div class="car-content">
+                <div class="car-purchase">
+                    <img src="img/car1.jpg" alt="">
+                    <div class="purchase-content">
+                        <button>Ideal for families</button>
+                        <h1>Ford Focus <p>or similar small car</p></h1>
+                        <div class="purchase-options">
+                            <div class="car-options">
+                                <i class="fa-regular fa-user"></i>
+                                <h1> 5 seats</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-gears"></i>
+                                <h1> Manual</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <h1>1 Large bag</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <h1>1 small bag</h1>
+                            </div>
+                            <div class="car-options">
+                                <i class="fa-brands fa-opencart"></i>
+                                <h1> Unlimited </h1>
+                            </div>
+
+                        </div>
+                        <a href="">Tirana Airport</a>
+                        <span>Car Rental Centre</span>
+                    </div>
+                    <div class="price-purchase">
+                        <p>Price for 3 days</p>
+                        <h4>US$109.33</h4>
+                        <span><i class="fa-solid fa-check"></i> Free cancellation</span>
+                        <button class="view-deal">View Deal</button>
+                    </div>
+                </div>
+                <div class="car-information">
+                    <img src="img/l1.png" alt="">
+                    <button class="car-grade">8.3</button>
+                    <span><b> Good </b> <br> 1000+ Reviews</span>
+                    <a href=""><i class="fa-regular fa-circle-question"></i>  Important info</a>
+                    <a href=""><i class="fa-regular fa-envelope"></i>  Email Quote</a>
+                </div>
+
+                <div class="car-rate car-hidden">
+                    <div class="rate-window">
+                        <h1>Costumer Ratings</h1>
+                        <div class="car-wnds">
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                            <div class="rate-wnd">
+                                <h2>Value for money</h2>
+                                <p>7.5</p>
+                                <div class="range">
+                                    <div class="right-range"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+     
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

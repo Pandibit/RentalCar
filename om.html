@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Airport Search</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    #search-container {
+      text-align: center;
+      margin-top: 50px;
+      position: relative;
+    }
+
+    .input-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .close-icon {
+        font-size: 20px;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      display: none;
+    }
+
+    .show-close-icon .close-icon {
+      display: block;
+    }
+
+    #search-input {
+      padding: 10px;
+      width: 400px;
+      padding-right: 40px;
+    }
+
+    #options-container {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .option {
+      padding: 10px;
+      width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    var airports = [
+      "John F. Kennedy International Airport (JFK)",
+      "London Heathrow Airport (LHR)",
+      "Charles de Gaulle Airport (CDG)",
+      "Tokyo Haneda Airport (HND)",
+      "Sydney Airport (SYD)",
+      "Leonardo da Vinci–Fiumicino Airport (FCO)",
+      // Add more airport names here
+    ];
+
+    function search() {
+      var query = document.getElementById("search-input").value.toLowerCase();
+      var matchingAirports = getAirportsStartingWith(query);
+      displayOptions(matchingAirports);
+
+      // Show or hide the close icon based on input value
+      var closeIcon = document.getElementById("close-icon");
+      closeIcon.classList.toggle("show-close-icon", query.length > 0);
+    }
+
+    function getAirportsStartingWith(query) {
+      return airports.filter(function(airport) {
+        return airport.toLowerCase().startsWith(query);
+      });
+    }
+
+    function displayOptions(airports) {
+      var optionsContainer = document.getElementById("options-container");
+      optionsContainer.innerHTML = "";
+
+      airports.forEach(function(airport) {
+        var option = document.createElement("div");
+        option.classList.add("option");
+        option.textContent = airport;
+        option.addEventListener("click", function() {
+          selectOption(airport);
+        });
+        optionsContainer.appendChild(option);
+      });
+    }
+
+    function selectOption(airport) {
+      document.getElementById("search-input").value = airport;
+      document.getElementById("options-container").innerHTML = "";
+    }
+
+    function clearInput() {
+      document.getElementById("search-input").value = "";
+      document.getElementById("options-container").innerHTML = "";
+
+      // Hide the close icon
+      var closeIcon = document.getElementById("close-icon");
+      closeIcon.classList.remove("show-close-icon");
+    }
+  </script>
+</head>
+<body>
+  <div id="search-container">
+    <div class="input-container">
+      <input type="text" id="search-input" placeholder="Enter letters" oninput="search()">
+      <div class="close-icon" id="close-icon" onclick="clearInput()">
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+    <div id="options-container"></div>
+  </div>
+</body>
+</html>
