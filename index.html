@@ -1,313 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900;800&family=Nunito+Sans:ital,wght@0,200;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@1;100&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900;800&family=Nunito+Sans:ital,wght@0,200;0,400;0,600;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@1;100&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200&family=Ysabeau:wght@1;100&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200&family=Ysabeau:wght@1;100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <link
+      class="tab-logo"
+      rel="icon"
+      href="img/p1.png"
+      type="image/icon type"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <img class="logo" src="img/p2.png" alt="" />
 
-<link class="tab-logo" rel="icon" href="img/p1.png" type="image/icon type">
+      <div class="menu-bar">
+        <i class="fa-solid fa-bars"></i>
+      </div>
 
-</head>
-<body>
-
-
-
-<div class="navbar">
-    <img class="logo" src="img/p2.png" alt="">
-
-    <div class="menu-bar">
-        <i class="fa-solid fa-bars"></i>        
-    </div>
-
-
-    <div class="nav-tab">
+      <div class="nav-tab">
         <div class="nav-item item-active">
-            <h1 class="scroll-link" data-target=".below-nav">Home</h1>
+          <h1 class="scroll-link" data-target=".below-nav">Home</h1>
         </div>
         <div class="nav-item">
-            <h1 class="scroll-link" data-target=".rental-about">Ride</h1>
+          <h1 class="scroll-link" data-target=".rental-about">Ride</h1>
         </div>
         <div class="nav-item">
-            <h1 class="scroll-link" data-target=".services-window">Services</h1>
+          <h1 class="scroll-link" data-target=".services-window">Services</h1>
         </div>
         <div class="nav-item">
-            <h1 class="scroll-link" data-target=".about">About</h1>
+          <h1 class="scroll-link" data-target=".about">About</h1>
         </div>
         <div class="nav-item">
-            <h1 class="scroll-link" data-target=".reviews">Reviews</h1>
+          <h1 class="scroll-link" data-target=".reviews">Reviews</h1>
         </div>
-    </div>
+      </div>
 
-    <div class="nav-btn">
+      <div class="nav-btn">
         <button class="sign-up" id="signup-btn">Sign Up</button>
         <button class="sign-in" id="signin-btn">Sign In</button>
+      </div>
     </div>
-</div>
 
-<div class="overlay">
-    <div class="login-form">
+    <div class="overlay">
+      <div class="login-form">
         <h1>Login</h1>
         <div class="username-wnd">
-            <p>Username</p>
-            <div class="username-tab">
-                <i class="fa-regular fa-user"></i>
-                <input class="login-input" type="text" placeholder="Username" >
-            </div>
+          <p>Username</p>
+          <div class="username-tab">
+            <i class="fa-regular fa-user"></i>
+            <input class="login-input" type="text" placeholder="Username" />
+          </div>
         </div>
         <div class="username-wnd">
-            <p>Password</p>
-            <div class="username-tab">
-                <i class="fa-solid fa-lock"></i>
-                <input class="login-input" type="password" placeholder="Password" >
-            </div>
+          <p>Password</p>
+          <div class="username-tab">
+            <i class="fa-solid fa-lock"></i>
+            <input class="login-input" type="password" placeholder="Password" />
+          </div>
         </div>
         <div class="forgot-pass">
-            <h6>Forgot password?</h6>
+          <h6>Forgot password?</h6>
         </div>
 
         <button class="login-btn">Login</button>
         <span>Or sign up using...</span>
         <div class="app-wnd">
-            <div class="app-icon app1">
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-          
-            <div class="app-icon app2">
-                <i class="fa-brands fa-facebook-f"></i>
-            </div>
+          <div class="app-icon app1">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
 
-            <div class="app-icon app3">
+          <div class="app-icon app2">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+
+          <div class="app-icon app3">
             <i class="fa-brands fa-twitter"></i>
-            </div>
-            
+          </div>
         </div>
+      </div>
     </div>
-   
-</div>
 
-<div class="below-nav">
-    <div class="home-content">
+    <div class="below-nav">
+      <div class="home-content">
         <h1><span>Come</span> and choose our <span>Rental</span> Cars</h1>
-        <p>"Experience the convenience and flexibility of our rental services!"</p>
+        <p>
+          "Experience the convenience and flexibility of our rental services!"
+        </p>
 
         <div class="app-store">
-            <img src="img/store.png" alt="">
-            <img src="img/ios.png" alt="">
+          <img src="images/pic1.jpg" alt="" />
+
+          <img src="images/pic2.jpg" alt="" />
         </div>
 
         <div class="order-rental">
-            <div class="order-wnd">
-              <h1>Location</h1>
-             
-                <select id="location-select"  class="order" >
-                    <option value="" disabled selected>Search Places</option>
-                    <option value="" > "John F. Kennedy International Airport (JFK)"</option>
-                    <option value="" >"London Heathrow Airport (LHR)"</option>
-                    <option value=""> "Sydney Airport (SYD)"</option>
-                    <option>"Leonardo da Vinci–Fiumicino Airport (FCO)"</option>
-                </select>         
-            </div>
-            <div class="order-wnd">
-              <h1>Pick-up Date</h1>
-              <input class="order" type="date">
-            </div>
-            <div class="order-wnd">
-              <h1>Return Date</h1>
-              <input class="order" type="date">
-            </div>
-            <button class="submit" onclick="window.location.href = 'rental.html'">Submit</button>
+          <div class="order-wnd">
+            <h1>Location</h1>
+
+            <select id="location-select" class="order">
+              <option value="" disabled selected>Search Places</option>
+              <option value="">
+                "John F. Kennedy International Airport (JFK)"
+              </option>
+              <option value="">"London Heathrow Airport (LHR)"</option>
+              <option value="">"Sydney Airport (SYD)"</option>
+              <option>"Leonardo da Vinci–Fiumicino Airport (FCO)"</option>
+            </select>
           </div>
+          <div class="order-wnd">
+            <h1>Pick-up Date</h1>
+            <input class="order" type="date" />
+          </div>
+          <div class="order-wnd">
+            <h1>Return Date</h1>
+            <input class="order" type="date" />
+          </div>
+          <button class="submit" onclick="window.location.href = 'rental.html'">
+            Submit
+          </button>
         </div>
-   
-      
-    
-    <div class="home-background">
-      <img src="img/p1.png" alt="">
-    </div>
-</div>
+      </div>
 
-<div class="rental-about">
-    <p>HOW ITS WORK</p>
-    <h1>Rent With 3 Easy Steps</h1>
-
-    <div class="steps-window">
-        <div class="step-wnd">
-            <div class="icon-tab">
-                <i class="fa-solid fa-location-dot"></i>
-           </div>
-        
-           <h2>Choose A Location</h2>
-           <p>Plus, with our flexible rental periods and competitive pricing, you can customize your rental experience . </p>
-
-        </div>
-        <div class="step-wnd ">
-            <div class="icon-tab pick-up">
-                <i class="fa-solid fa-calendar-check"></i>
-           </div>
-        
-           <h2>Pick-Up Date</h2>
-           <p> We offer a wide selection of vehicles to choose from, whether you're looking for a compact car for a solo trip. </p>
-
-        </div>
-        <div class="step-wnd">
-            <div class="icon-tab">
-                <i class="fa-solid fa-calendar-xmark"></i>
-           </div>
-        
-           <h2>Book a Car</h2>
-           <p> With our easy online booking process, it's never been easier to reserve your rental car. </p>
-
-        </div>
+      <div class="home-background">
+        <img src="images/pic1.jpg" alt="" />
+      </div>
     </div>
 
+    <div class="rental-about">
+      <p>HOW ITS WORK</p>
+      <h1>Rent With 3 Easy Steps</h1>
 
-</div>
+      <div class="steps-window">
+        <div class="step-wnd">
+          <div class="icon-tab">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
 
-<div class="services-window">
-    <p>BEST SERVICES</p>
-    <h1>Explore Out Top Deals From Top Rated Dealers</h1>
-   
-    <div class="car-details">
+          <h2>Choose A Location</h2>
+          <p>
+            Plus, with our flexible rental periods and competitive pricing, you
+            can customize your rental experience .
+          </p>
+        </div>
+        <div class="step-wnd">
+          <div class="icon-tab pick-up">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+
+          <h2>Pick-Up Date</h2>
+          <p>
+            We offer a wide selection of vehicles to choose from, whether you're
+            looking for a compact car for a solo trip.
+          </p>
+        </div>
+        <div class="step-wnd">
+          <div class="icon-tab">
+            <i class="fa-solid fa-calendar-xmark"></i>
+          </div>
+
+          <h2>Book a Car</h2>
+          <p>
+            With our easy online booking process, it's never been easier to
+            reserve your rental car.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="services-window">
+      <p>BEST SERVICES</p>
+      <h1>Explore Out Top Deals From Top Rated Dealers</h1>
+
+      <div class="car-details">
         <div class="car-wnd">
-            <img src="img/c1.webp" alt="">
-            <button class="v2017"> 2017</button>
-            <h1>2018 Honda Civic</h1>
-            <p>$ 54'870 | $ 358 <span>\ month</span></p>
-            <button class="rent-now"> Rent Now</button>
+          <img src="images/pic1.jpg" alt="" />
+          <button class="v2017">2017</button>
+          <h1>2018 Honda Civic</h1>
+          <p>$ 54'870 | $ 358 <span>\ month</span></p>
+          <button class="rent-now">Rent Now</button>
         </div>
 
         <div class="car-wnd">
-            <img src="img/c2.jpg" alt="">
-            <button class="v2017"> 2017</button>
-            <h1>2018 Honda Civic</h1>
-            <p>$ 54'870 | $ 358 <span>\ month</span></p>
-            <button class="rent-now"> Rent Now</button>
+          <img src="images/pic2.jpg" alt="" />
+          <button class="v2017">2017</button>
+          <h1>2018 Honda Civic</h1>
+          <p>$ 54'870 | $ 358 <span>\ month</span></p>
+          <button class="rent-now">Rent Now</button>
         </div>
         <div class="car-wnd">
-            <img src="img/c3.jpeg" alt="">
-            <button class="v2017"> 2017</button>
-            <h1>2018 Honda Civic</h1>
-            <p>$ 54'870 | $ 358 <span>\ month</span></p>
-            <button class="rent-now"> Rent Now</button>
+          <img src="images/pic3.jpg" alt="" />
+          <button class="v2017">2017</button>
+          <h1>2018 Honda Civic</h1>
+          <p>$ 54'870 | $ 358 <span>\ month</span></p>
+          <button class="rent-now">Rent Now</button>
         </div>
         <div class="car-wnd">
-            <img src="img/c4.jpeg" alt="">
-            <button class="v2017"> 2017</button>
-            <h1>2018 Honda Civic</h1>
-            <p>$ 54'870 | $ 358 <span>\ month</span></p>
-            <button class="rent-now"> Rent Now</button>
+          <img src="images/pic4.jpg" alt="" />
+          <button class="v2017">2017</button>
+          <h1>2018 Honda Civic</h1>
+          <p>$ 54'870 | $ 358 <span>\ month</span></p>
+          <button class="rent-now">Rent Now</button>
         </div>
         <div class="car-wnd">
-            <img src="img/c5.jpg" alt="">
-            <button class="v2017"> 2017</button>
-            <h1>2018 Honda Civic</h1>
-            <p>$ 54'870 | $ 358 <span>\ month</span></p>
-            <button class="rent-now"> Rent Now</button>
+          <img src="images/pic5.jpg" alt="" />
+          <button class="v2017">2017</button>
+          <h1>2018 Honda Civic</h1>
+          <p>$ 54'870 | $ 358 <span>\ month</span></p>
+          <button class="rent-now">Rent Now</button>
         </div>
         <div class="car-wnd">
-            <img src="img/c6.jpg" alt="">
-            <button class="v2017"> 2017</button>
-            <h1>2018 Honda Civic</h1>
-            <p>$ 54'870 | $ 358 <span>\ month</span></p>
-            <button class="rent-now"> Rent Now</button>
+          <img src="images/pic7.jpg" alt="" />
+          <button class="v2017">2017</button>
+          <h1>2018 Honda Civic</h1>
+          <p>$ 54'870 | $ 358 <span>\ month</span></p>
+          <button class="rent-now">Rent Now</button>
         </div>
-    </div>  
-</div>
+      </div>
+    </div>
 
-<div class="about">
-    <p>ABOUT US</p>
-    <h1>Best Customer Experience</h1>
-    <div class="about-window">
-         <img src="img/about.jpg" alt="">
+    <div class="about">
+      <p>ABOUT US</p>
+      <h1>Best Customer Experience</h1>
+      <div class="about-window">
+        <img src="img/about.jpg" alt="" />
         <div class="about-content">
-            <h1>ABOUT US</h1>
-            <p>The main advantage of renting from a rental shop is the cost-effectiveness and convenience that it provides. Instead of buying expensive equipment or items that are only needed for a short period of time, customers can simply rent them for a fraction of the cost.</p>
-            <p>Rental shops also offer the benefit of expert advice and assistance. Staff members are knowledgeable about the products they offer and can provide guidance on how to use them properly. This is particularly helpful for equipment rentals, where proper usage and safety are crucial.</p>
-            <button class="learn-more">Learn More</button>
+          <h1>ABOUT US</h1>
+          <p>
+            The main advantage of renting from a rental shop is the
+            cost-effectiveness and convenience that it provides. Instead of
+            buying expensive equipment or items that are only needed for a short
+            period of time, customers can simply rent them for a fraction of the
+            cost.
+          </p>
+          <p>
+            Rental shops also offer the benefit of expert advice and assistance.
+            Staff members are knowledgeable about the products they offer and
+            can provide guidance on how to use them properly. This is
+            particularly helpful for equipment rentals, where proper usage and
+            safety are crucial.
+          </p>
+          <button class="learn-more">Learn More</button>
         </div>
-       
+      </div>
     </div>
-</div>
 
-<div class="reviews">
-    <p>REVIEWS</p>
-    <h1>Whats Our Customer Say</h1>
-    <div class="review-window">
+    <div class="reviews">
+      <p>REVIEWS</p>
+      <h1>Whats Our Customer Say</h1>
+      <div class="review-window">
         <div class="review-wnd">
-            <div class="customer-profile">
-                <img src="img/user1.jpg" alt="">
-            </div>
-            <h1>Kattylian Perish</h1>
-            <div class="stars">
-                <i class="fa-solid fa-star "></i>
-                <i class="fa-solid fa-star "></i>
-                <i class="fa-solid fa-star "></i>
-                <i class="fa-solid fa-star "></i>
-                <i class="fa-solid fa-star"></i>
-            </div>
-            <p>The staff were professional and knowledgeable, and they helped me choose a car that met my needs and budget.</p>
+          <div class="customer-profile">
+            <div style="color: white; margin-top:24px">KP</div>
+          </div>
+          <h1>Kattylian Perish</h1>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            The staff were professional and knowledgeable, and they helped me
+            choose a car that met my needs and budget.
+          </p>
         </div>
         <div class="review-wnd">
-            <div class="customer-profile">
-                <img src="img/user2.jpg" alt="">
-            </div>
-            <h1>Kattylian Perish</h1>
-            <div class="stars">
-                <i class="fa-solid fa-star "></i>
-                <i class="fa-solid fa-star "></i>
-                <i class="fa-solid fa-star "></i>
-                <i class="fa-solid fa-star "></i>
-                <i class="fa-solid fa-star"></i>
-            </div>
-            <p>The staff were professional and knowledgeable, and they helped me choose a car that met my needs and budget.</p>
+          <div class="customer-profile">
+            <div style="color: white; margin-top:24px">KP</div>
+          </div>
+          <h1>Kattylian Perish</h1>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            The staff were professional and knowledgeable, and they helped me
+            choose a car that met my needs and budget.
+          </p>
         </div>
         <div class="review-wnd">
-            <div class="customer-profile">
-                <img src="img/user3.jpg" alt="">
-            </div>
-            <h1>Kattylian Perish</h1>
-            <div class="stars">
-                <i class="fa-solid fa-star "></i>
-                <i class="fa-solid fa-star "></i>
-                <i class="fa-solid fa-star "></i>
-                <i class="fa-solid fa-star "></i>
-                <i class="fa-solid fa-star"></i>
-            </div>
-            <p>The staff were professional and knowledgeable, and they helped me choose a car that met my needs and budget.</p>
+          <div class="customer-profile">
+            <div style="color: white; margin-top:24px">KP</div>
+          </div>
+          <h1>Kattylian Perish</h1>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            The staff were professional and knowledgeable, and they helped me
+            choose a car that met my needs and budget.
+          </p>
         </div>
-      
+      </div>
     </div>
-</div>
 
-
-
-
-
-
-
-
- 
-
-     
-
-    
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
